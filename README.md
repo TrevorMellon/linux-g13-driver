@@ -1,4 +1,11 @@
-#Readme File
+# G13 Usb Driver
+
+This is a fork of [Tetz95](https://github.com/Tetz95/linux-g13-driver) fork.
+Spirit of OSS and all that.
+
+Primary difference is this version uses cmake.
+
+## Original Readme File [Tetz95]
 
 This code was forked from Jim Gupta's code at https://code.google.com/p/linux-g13-driver/  
 
@@ -6,13 +13,13 @@ I've forked this code because Google Code is deprecated and I don't want it lost
 
 I haven't changed the fundamental code because I'm by no means a coder, but we'll see what happens from here.  I'll eventually write a .service file for systemd and perhaps package it for the AUR.  The service file should work with Ubuntu 15.04 and above.
 
-##Notes
+### Notes [Tetz95]
 I've tried this on 64-bit Arch Linux and it works so far.  I haven't tried it in 64-bit Ubuntu but it should work there, too.  
 
 I'm having a hard time getting udev rules to work so this can run in user mode.  It seems that `/dev/uinput` is in the kernel and loads before anything is writable and the file's permissions don't get modified.
 
 
-##Requirements
+### Requirements [Tetz95]
 **libusb-1.0**  
 
 For Ubuntu, it should be installed already but if you don't have it, you can get it by typing:
@@ -33,17 +40,17 @@ For Arch it can be installed by typing:
 
     sudo pacman -S jre8-openjdk
 
-##Download
+### Download [Tetz95]
 Download zip file from https://github.com/Tetz95/linux-g13-driver/tree/master/distros  
 Unzip into your favorite directory
 
-##Build
+### Build [Tetz95]
 Open a console (command prompt)  
 Go to the directory where you unzipped your download  
 type `make`
 
 
-##Running Application
+### Running Application [Tetz95]
 Run the config tool first!
 In a command prompt go to the directory where you unzipped your download and type:  
 
